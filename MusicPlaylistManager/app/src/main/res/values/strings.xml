@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Music Playlist Manager</string>
+    <string name="song_title_placeholder">Song Title</string>
+    <string name="artist_name_placeholder">Artist Name</string>
+    <string name="view_details">View Details</string>
+    <string name="average_rating">Calculate Average Rating</string>
+    <string name="song_details_screen_title">Song Details</string>
+    <string name="current_rating">Current Rating:</string>
+    <string name="new_rating">New Rating (1-5):</string>
+    <string name="comments">Comments:</string>
+    <string name="update_song">Update Song</string>
+    <string name="view_artist_info">View Artist Info</string>
+    <string name="extended_view_screen_title">Artist Information</string>
+    <string name="artist_bio_label">Artist Biography:</string>
+    <string name="average_rating_screen_title">Average Song Rating</string>
+    <string name="average_rating_label">Average Rating:</string>
+    <string name="your_music_playlist">Your Music Playlist</string>
+    <string name="new_rating_1_5">New Rating (1-5):</string>
+    <string name="new_comments">New Comments:</string>
+    <string name="add_your_comment">Add your comment</string>
+    <string name="enter_rating_1_5">Enter rating (1-5)</string>
+    <string name="artist_biography_will_appear_here">Artist biography will appear here.</string>
+    <string name="n_a">N/A</string>
+</resources>

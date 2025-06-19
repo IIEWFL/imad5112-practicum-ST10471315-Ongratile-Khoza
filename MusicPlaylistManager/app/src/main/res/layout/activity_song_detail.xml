@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".activities.SongDetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/song_details_screen_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_song_title"
+                style="@style/SongTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/song_title_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_artist_name"
+                style="@style/ArtistNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/artist_name_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_current_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/current_rating"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_current_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/comments"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_rating_1_5"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/et_new_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="Hint: 3"
+                android:hint="@string/enter_rating_1_5"
+                android:inputType="number"
+                android:maxLength="1"
+                android:minHeight="48dp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_comments"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/et_new_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Hint: I really love their style"
+                android:hint="@string/add_your_comment"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:layout_marginBottom="16dp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/btn_update_song"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="@string/update_song"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_view_artist_info"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/view_artist_info"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

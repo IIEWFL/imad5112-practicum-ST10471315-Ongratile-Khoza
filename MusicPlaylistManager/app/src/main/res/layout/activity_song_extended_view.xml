@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".activities.SongExtendedViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extended_view_screen_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_artist_name_extended"
+                style="@style/SongTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/artist_name_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_artist_bio_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist_bio_label"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_artist_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artist_biography_will_appear_here"
+                android:textSize="16sp"
+                android:minLines="5"
+                android:gravity="top" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

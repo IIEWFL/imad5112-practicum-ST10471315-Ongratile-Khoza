@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:gravity="center_horizontal" tools:context=".activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_music_playlist"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Song 1 -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/song1_title"
+                style="@style/SongTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_title_placeholder" />
+
+            <TextView
+                android:id="@+id/song1_artist"
+                style="@style/ArtistNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist_name_placeholder" />
+
+            <Button
+                android:id="@+id/btn_view_details_song1"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/view_details"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Song 2 -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/song2_title"
+                style="@style/SongTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_title_placeholder" />
+
+            <TextView
+                android:id="@+id/song2_artist"
+                style="@style/ArtistNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist_name_placeholder" />
+
+            <Button
+                android:id="@+id/btn_view_details_song2"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/view_details"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Song 3 -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/song3_title"
+                style="@style/SongTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_title_placeholder" />
+
+            <TextView
+                android:id="@+id/song3_artist"
+                style="@style/ArtistNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist_name_placeholder" />
+
+            <Button
+                android:id="@+id/btn_view_details_song3"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/view_details"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Song 4 -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/song4_title"
+                style="@style/SongTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_title_placeholder" />
+
+            <TextView
+                android:id="@+id/song4_artist"
+                style="@style/ArtistNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist_name_placeholder" />
+
+            <Button
+                android:id="@+id/btn_view_details_song4"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/view_details"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btn_average_rating"
+        style="@style/RoundedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/average_rating"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+</LinearLayout>
